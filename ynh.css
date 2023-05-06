@@ -1,0 +1,46 @@
+.card-group {
+    margin: 0 auto;
+    max-width: 75rem;
+    padding: 2rem;
+  }
+
+#fondo {
+height: 30rem;
+background-image: url(Fondo\ mate.jpg);
+background-size: cover;
+background-position: center center;
+opacity: 0.7;
+}
+
+.card-img-overlay {
+  padding: 7rem;
+  margin-right: 3rem;
+  text-align: right;
+  overflow: hidden;
+}
+
+#terceritem {
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 30rem;
+  overflow: hidden;
+}
+
+#tituloprincipal {
+  font-size: 2em; /* aumenta el tamaño en un factor de 2 */
+}
+
+#imagenyerba {
+  overflow: hidden;
+  max-width: 150%;
+}
+
+.col-md-8 {
+  margin: 0 auto;
+  max-width: 30%;
+  max-height: 30rem;
+  overflow: hidden;
+}
+
+#formulario {
+}
