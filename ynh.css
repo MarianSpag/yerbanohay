@@ -1,10 +1,9 @@
 #fondo {
-height: 30rem;
-background-image: url(Fondo\ mate.jpg);
-background-size: cover;
-background-position: center center;
-
-}
+  height: 30rem;
+  background-image: url(Fondo\ mate.jpg);
+  background-size: cover;
+  background-position: center center;
+  }
 
 .card-img-overlay {
   padding: 7rem;
@@ -16,24 +15,21 @@ background-position: center center;
 #cardgroup {
   margin: 0 auto;
   max-width: 75rem;
-  padding: 2rem;
+  padding bottom: 2rem;
 }
-#terceritem {
-  margin: 0 auto;
-  max-width: 90%;
-  max-height: 30rem;
-  overflow: hidden;
+
+#Beneficios {
+  background-color: #1c8454
+  ;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 #tituloprincipal {
   font-size: 4em; /* aumenta el tamaño en un factor de 2 */
 }
 
-.card mb-3 {
-
-}
-
-#formulario {
+#pedido {
   text-align: center;
   padding-right: 10rem;
   padding-left: 10rem;
@@ -72,3 +68,6 @@ body {
   background-color:#212529
 }
 
+#separador {
+  margin-top: 2rem;
+}

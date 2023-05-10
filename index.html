@@ -10,52 +10,55 @@
   
 <body>
     <!-- Inicio Barra de navegación -->
+    
 <nav class="navbar navbar-expand-lg bg-body-tertiary"  data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="Yerba no hay diseño logos-29.png" alt="Logo" width="150" class="d-inline-block align-text-top">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav d-flex justify-content-center align-items-center">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Inicio</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Yerbas
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Orgánicas</a></li>
+            <li><a class="dropdown-item" href="#">Agroecológicas</a></li>
+            <li><a class="dropdown-item" href="#">Barbacuá</a></li>
+            <li><a class="dropdown-item" href="#">Cinta</a></li>
+            <li><a class="dropdown-item" href="#">Suaves</a></li>
+            <li><a class="dropdown-item" href="#">Despaladas</a></li>
           </ul>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#pedido">Relizá tu pedido</a>
+        </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
     </div>
   </div>
 </nav>
     <!-- Fin Barra de navegación -->
     <!-- Comienzo img con texto overlay -->
 <div class="card text-bg-dark" id="fondo">
-    <div class="card-img-overlay">
+    <div class="card-img-overlay" id="titulo">
         <h5 class="card-title" id="tituloprincipal">Tienda de yerbas piolas</h5>
         <p class="card-text">"¡Bienvenides a Yerba no hay! El rincón perfecto para les amantes del mate con onda y sabor bien criollo"</p>
-        <a class="btn btn-success" href="#" role="button">Comprar</a>
+        <a class="btn btn-success" href="#pedido" role="button">Comprar</a>
         <button type="button" class="btn btn-outline-success">Saber más</button>
     </div>
 </div>
     <!-- fin img con texto overlay -->
+
+<section id="separador">
+  <h1>Conocé el emprendimiento</h1>
+  <p>De yerbas piolas, agroecológicas y orgánicas.</p>
+</section>    
     <!-- Comienzo 3 cards -->
 <div class="row row-cols-1 row-cols-md-3 g-4" id="cardgroup">
   <div class="col">
@@ -63,7 +66,8 @@
       <img src="hombre-cosecha-recoge-hojas-te-verde-fresco-campo-te-tierra-alta-chiang-mai-tailandia.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Dinámica de compra</h5>
-        <p class="card-text">Solicitamos que la compra mínima sea de 4 paquetes. Esto nos permite organizarnos mejor con proveedores.La mayoría de las yerbas son de cooperativas o pymes y, por ende, no podemos garantizar el stock permanente. Pedimos que consultes disponibilidad y también que estés dispuesto/a a otras opciones. En la variedad también está el gusto. La entrega no es inmediata porque tenemos que sumar pedidos para poder hacer una compra al por mayor y sostener los precios que presentamos. La idea es que quienes consuman piensen en su compra de forma mensual, entendemos que al principio va a ser más difícil, pero podemos ayudar con el cálculo de kilos y paquetes según nuestra experiencia.</p>
+        <p class="card-text">La compra mínima es de 4 paquetes y, como trabajamos con pequeños productores no podemos garantizar el stock. 
+          Proponemos animarse a probar distintas yerbas, nosotras podemos asesorarte en todo lo referido a tu compra.</p>
       </div>
     </div>
   </div>
@@ -72,8 +76,9 @@
       <img src="quienes somos.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Somos Marian y Guada, y estamos detrás de este emprendimiento.</h5>
-        <p class="card-text">Nosotras no sabíamos que había yerbas distintas, yerbas piolas, de cooperativas, de pymes, orgánicas o agroecológicas, que no tuvieran trabajadores esclaves o que no usaran pesticidas.
-          Quizás vos tampoco.</p>
+        <p class="card-text">Nosotras no sabíamos que había yerbas tan diversas, yerbas piolas, 
+          de cooperativas, de pymes, orgánicas o agroecológicas, sin trabajadores esclavos ni pesticidas dañinos. 
+          Penamos que no somos las única por eso creamos Yerba No Hay.</p>
       </div>
     </div>
   </div>
@@ -82,26 +87,37 @@
       <img src="primer-plano-polvo-yerba-mate-organico-calabaza-calabaza-tradicional.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">La Yerba Mate: Un Legado Argentino</h5>
-        <p class="card-text">La yerba mate, el mate, el amargo del pueblo. Desde siempre, nos une, nos identifica y nos da energía. En Yerba No Hay, nos enorgullece celebrar la historia y tradición de la yerba mate argentina. Te invitamos a saborear su esencia única y a conectarte con nuestras raíces más criollas. ¡Sumate y compartí el legado de la yerba mate en cada mateada!</p>
+        <p class="card-text">La yerba mate, el mate, el amargo del pueblo. Desde siempre, nos une, 
+          nos identifica y nos da energía. En Yerba No Hay, nos enorgullece celebrar la historia y tradición de la yerba mate argentina. 
+          Te invitamos a saborear su esencia única y a conectarte con nuestras raíces más criollas. 
+          ¡Sumate y compartí el legado de la yerba mate en cada mateada!</p>
       </div>
     </div>
   </div>
 </div>
     <!-- fin 3 cards -->
     <!-- Comienzo tercer item -->
-<div class="card mb-3" id="terceritem">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img src="primer-plano-textura-composicion-deliciosa-comida.jpg" class="img-fluid" id="imagenyerba">
+    <div class="container-fluid" id="Beneficios">
+      <div class="row d-flex">
+          <div class="col-12 col-md-6 p-0">
+              <img src="primer-plano-textura-composicion-deliciosa-comida.jpg" alt="honolulu" class="img-fluid">
+          </div>
+          <div class="col-12 col-md-6 p-0 text-light Beneficios">
+              <div class="pt-4 ps-4">
+                  <h4 class="fw-medium">Descubre los Beneficios de la Yerba Mate Orgánica: Una Opción Saludable y Sostenible</h4>
+                      <p class="fw-light">La yerba mate orgánica ofrece numerosas ventajas para la salud. 
+                        Al ser cultivada sin el uso de agroquímicos y pesticidas, conserva su pureza natural 
+                        y se convierte en una opción saludable. Además, al evitar el contacto con sustancias químicas dañinas, 
+                        se minimiza el riesgo de exposición a residuos tóxicos. La yerba mate orgánica contiene una amplia variedad de nutrientes, 
+                        como vitaminas, minerales y antioxidantes, que contribuyen a mantener el bienestar general del organismo. 
+                        Al elegir yerba mate orgánica, estás optando por una alternativa respetuosa con el medio ambiente 
+                        y promoviendo prácticas agrícolas sostenibles. Disfruta de los beneficios de la yerba mate orgánica 
+                        y experimenta una bebida saludable y auténtica.</p>
+
+                      <button type="button" class="btn btn-outline-secondary">Conocé más</button>
+              </div>
+          </div>
       </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">Descubre los Beneficios de la Yerba Mate Orgánica: Una Opción Saludable y Sostenible</h5>
-          <p class="card-text">La yerba mate orgánica ofrece numerosas ventajas para la salud. Al ser cultivada sin el uso de agroquímicos y pesticidas, conserva su pureza natural y se convierte en una opción saludable. Además, al evitar el contacto con sustancias químicas dañinas, se minimiza el riesgo de exposición a residuos tóxicos. La yerba mate orgánica contiene una amplia variedad de nutrientes, como vitaminas, minerales y antioxidantes, que contribuyen a mantener el bienestar general del organismo. Al elegir yerba mate orgánica, estás optando por una alternativa respetuosa con el medio ambiente y promoviendo prácticas agrícolas sostenibles. Disfruta de los beneficios de la yerba mate orgánica y experimenta una bebida saludable y auténtica.</p>
-          <button type="button" class="btn btn-outline-secondary">Conocé más</button>
-        </div>
-      </div>
-    </div>
   </div>
 <!-- fin tercer item -->
 <!-- Comienzo formulario -->
@@ -110,7 +126,7 @@
   <h1>PEDIDO</h1>
   <p>Dejanos tu nombre y el pedido que quieras realizar, nos pondremos en contacto con vos a la brevedad</p>
  </section>
-<div class="container" id="formulario">
+<div class="container" id="pedido">
     <div class="row">
       <div class="col">
         <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
